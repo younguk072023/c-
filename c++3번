@@ -1,0 +1,18 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+	//1부터 n까지의 m의 배수합
+	int n, m, sum = 0;
+	cout << "N과 M값을 입력하세요 : ";
+	cin >> n >> m;
+	cout << "N은 " << n << ", M은 " << m << endl;
+	for (int i = 0; i <= n; i++) {
+		if (i % m == 0) {
+			sum += i;
+		}
+	}
+ 
+	cout << "배수합은 " << sum << endl;
+}
